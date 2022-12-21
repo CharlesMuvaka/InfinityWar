@@ -69,6 +69,9 @@ public class LocateTitan {
 
         StdIn.setFile(forgeStormbreakerInputFile);
 
+        //reading the number of vertices
+        int noOfVertices = StdIn.readInt();
+
 
     }
 }
