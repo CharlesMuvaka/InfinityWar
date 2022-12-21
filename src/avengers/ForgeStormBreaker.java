@@ -62,6 +62,13 @@ public class ForgeStormBreaker {
         StdOut.print(row);
         int column = StdIn.readInt();
         int[] fluxNumbers = StdIn.readAllInts();
+        int sum  = 0;
+        // Calculate the flux
+        // WRITE YOUR CODE HERE TO CALCULATE THE FLUX USING THE INPUT FILE
+        for (int i = 0; i < fluxNumbers.length; i++) {
+            sum += fluxNumbers[i];
+        }
+
 
 
 
