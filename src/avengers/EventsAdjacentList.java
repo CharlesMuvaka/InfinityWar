@@ -11,4 +11,13 @@ public class EventsAdjacentList {
         this.events = new Event[noOfEvents];
     }
 
+    public Event[] getEvents() {
+        return events;
+    }
+
+    public void setEvents(Event[] events) {
+        this.events = events;
+    }
+
+
 }
