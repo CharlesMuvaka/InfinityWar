@@ -84,5 +84,31 @@ public class LocateTitan {
         }
 
 
+        double cost = 0;
+        int vertex = 0;
+        for (int i = 1; i < allVertices.size(); i++) {
+            String s = allVertices.get(i);
+            vertex = i;
+            if (s.length() != 0){
+                cost = Double.parseDouble(s.substring(1));
+//                StdOut.println(cost);
+            }
+            verticesCost.put(vertex, cost);
+        }
+
+
+        MatrixGraph graph = new MatrixGraph(noOfVertices, verticesCost);
+
+        List<String> edges = new ArrayList<>();
+
+        //Reading each line of the matrix
+        for (int i = 0; i < noOfVertices; i++) {
+            String row  = StdIn.readLine().replaceAll("\\s", "");
+//            StdOut.println(row);
+            edges.add(row);
+
+        }
+
+
     }
 }
