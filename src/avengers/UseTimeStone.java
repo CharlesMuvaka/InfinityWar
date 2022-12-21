@@ -111,6 +111,16 @@ public class UseTimeStone {
         }
 
 
+        for (int i = 0; i < rows.size(); i++) {
+//                StdOut.println(allEvents[i].getNeighbors().size());
+        }
+        for (int i = 0; i < allEvents.length; i++) {
+//            StdOut.print(allEvents[i].getNeighbors().size());
+        }
+
+        EventsAdjacentList adjacentList = new EventsAdjacentList(numberOfEvents);
+        adjacentList.setEvents(allEvents);
+
 
 
     }
