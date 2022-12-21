@@ -76,6 +76,12 @@ public class MindStoneNeighborNeurons {
 
         int synapsesNumber = StdIn.readInt();
 
+        List<String> neighbors = new ArrayList<>();
+
+        for (int i = 0; i <= synapsesNumber; i++) {
+            String nei = StdIn.readLine();
+            neighbors.add(nei);
+        }
 
 
     }
