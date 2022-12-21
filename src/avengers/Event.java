@@ -8,5 +8,10 @@ public class Event {
     private int weight;
     private List<Event> neighbors = new ArrayList<>();
 
+    public Event(int index) {
+        this.index = index;
+//        this.weight = weight;
+    }
+
 
 }
