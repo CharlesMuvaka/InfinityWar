@@ -121,6 +121,11 @@ public class UseTimeStone {
         EventsAdjacentList adjacentList = new EventsAdjacentList(numberOfEvents);
         adjacentList.setEvents(allEvents);
 
+//        adjacentList.printGraph();
+        int[] paths = adjacentList.getNoOfPaths(0, EuThreshold);
+        StdOut.print(paths[0]);
+        StdOut.print(paths[1]);
+
 
 
     }
