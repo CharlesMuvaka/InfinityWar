@@ -86,6 +86,18 @@ public class MindStoneNeighborNeurons {
 
         String mindStone = allNeurons.get(allNeurons.size()-1);
 
+        String space = " ";
+        List<String> wantedVertex = new ArrayList<>();
+
+        for (int i = 1; i <= synapsesNumber; i++) {
+            String mindStoneNeuron = neighbors.get(i).substring(neighbors.get(i).indexOf(space));
+            String mindStoneWanted = neighbors.get(i).substring(0,neighbors.get(i).indexOf(space));
+            if (mindStoneNeuron.trim().equals(mindStone.trim())){
+                wantedVertex.add(mindStoneWanted);
+            }
+        }
+
+
 
 
     }
