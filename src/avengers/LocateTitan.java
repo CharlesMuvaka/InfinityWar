@@ -109,6 +109,19 @@ public class LocateTitan {
 
         }
 
+        for (int i = 0; i < noOfVertices; i++) {
+            Double cost1 = verticesCost.get(i + 1);
+            for (int j = 0; j < noOfVertices; j++) {
+                Double cost2 = verticesCost.get(j +1);
+                int c = Character.getNumericValue(edges.get(i).charAt(j)) ;
+                double v = c / (cost1 * cost2);
+                graph.getAdjacencyMatrix()[i][j] = (int) v;
+                graph.getAdjacencyMatrix()[j][i] = (int) v;
+
+            }
+
+        }
+
 
     }
 }
