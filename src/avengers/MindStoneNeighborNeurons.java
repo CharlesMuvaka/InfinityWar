@@ -66,45 +66,7 @@ public class MindStoneNeighborNeurons {
 
         StdIn.setFile(forgeStormbreakerInputFile);
         int neuronsNumber = StdIn.readInt();
-        AdjacencyList neuronsList = new AdjacencyList(neuronsNumber);
-        List<String> allNeurons = new ArrayList<>();
 
-        for (int i = 0; i <= neuronsNumber; i++) {
-            String neuron = StdIn.readLine();
-            allNeurons.add(neuron);
-        }
-
-        int synapsesNumber = StdIn.readInt();
-
-        List<String> neighbors = new ArrayList<>();
-
-        for (int i = 0; i <= synapsesNumber; i++) {
-            String nei = StdIn.readLine();
-            neighbors.add(nei);
-        }
-
-
-        String mindStone = allNeurons.get(allNeurons.size()-1);
-
-        String space = " ";
-        List<String> wantedVertex = new ArrayList<>();
-
-        for (int i = 1; i <= synapsesNumber; i++) {
-            String mindStoneNeuron = neighbors.get(i).substring(neighbors.get(i).indexOf(space));
-            String mindStoneWanted = neighbors.get(i).substring(0,neighbors.get(i).indexOf(space));
-            if (mindStoneNeuron.trim().equals(mindStone.trim())){
-                wantedVertex.add(mindStoneWanted);
-            }
-        }
-
-
-        //Writing to the file
-        StdOut.setFile(forgeStormbreakerOutputFile);
-        for (int i = 0; i <wantedVertex.size(); i++) {
-            StdOut.println(wantedVertex.get(i));
-
-        }
-        StdOut.println();
 
     }
 }
