@@ -66,6 +66,14 @@ public class MindStoneNeighborNeurons {
 
         StdIn.setFile(forgeStormbreakerInputFile);
         int neuronsNumber = StdIn.readInt();
+        AdjacencyList neuronsList = new AdjacencyList(neuronsNumber);
+        List<String> allNeurons = new ArrayList<>();
+
+        for (int i = 0; i <= neuronsNumber; i++) {
+            String neuron = StdIn.readLine();
+            allNeurons.add(neuron);
+        }
+
 
 
     }
