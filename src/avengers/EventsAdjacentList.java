@@ -19,5 +19,13 @@ public class EventsAdjacentList {
         this.events = events;
     }
 
+    public void addNeighbor(Event event, Event neighbors) {
+        for (int i = 0; i < events.length; i++) {
+            if (events[i].getIndex() == event.getIndex()) {
+                event.setNeighbors(neighbors);
+            }
+        }
+    }
+
 
 }
