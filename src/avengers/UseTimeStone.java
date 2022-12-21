@@ -126,7 +126,10 @@ public class UseTimeStone {
         StdOut.print(paths[0]);
         StdOut.print(paths[1]);
 
-
+        //Writing to the file
+        StdOut.setFile(forgeStormbreakerOutputFile);
+        StdOut.println(paths[0]);
+        StdOut.println(paths[1]);
 
     }
 }
