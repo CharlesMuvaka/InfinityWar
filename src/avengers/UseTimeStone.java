@@ -96,6 +96,21 @@ public class UseTimeStone {
             rows.add(row);
         }
 
+        for (int i = 0; i < rows.size(); i++) {
+//            1. StdOut.println(rows.get(i));
+            String s = rows.get(i);
+            for (int j = 0; j < s.length(); j++) {
+//                2.StdOut.println(s.charAt(j));
+                int c = Character.getNumericValue(s.charAt(j));
+//                3.StdOut.println(c);
+                if (c == 1){
+                    allEvents[i].setNeighbors(allEvents[j]);
+                }
+
+            }
+        }
+
+
 
 
     }
