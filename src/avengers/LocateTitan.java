@@ -121,6 +121,12 @@ public class LocateTitan {
             }
 
         }
+        graph.displayGraph();
+
+
+
+        //Writing to the file
+        StdOut.setFile(forgeStormbreakerOutputFile);
 
 
     }
