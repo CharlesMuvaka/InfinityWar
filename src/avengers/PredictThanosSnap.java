@@ -77,4 +77,21 @@ public class PredictThanosSnap {
         StdOut.println(seed);
         int numberOfVertices = StdIn.readInt();
 
+
+        List<Integer> allVertices = new ArrayList<>();
+
+        for (int i = 0; i < numberOfVertices; i++) {
+            allVertices.add(i);
+        }
+
+        StdRandom.setSeed(seed);
+
+        List<Integer> removedVertices = new ArrayList<>();
+        for (int i = 0; i < allVertices.size() ; i++) {
+            if (StdRandom.uniform() <= 0.5){
+                removedVertices.add(i);
+            }
+        }
+
+
 }
