@@ -127,7 +127,9 @@ public class LocateTitan {
 
         //Writing to the file
         StdOut.setFile(forgeStormbreakerOutputFile);
-
+        Dijskas dijskas = new Dijskas();
+        int shortestDist = dijskas.calculateShortestDist(graph.getAdjacencyMatrix());
+        StdOut.println(shortestDist);
 
     }
 }
