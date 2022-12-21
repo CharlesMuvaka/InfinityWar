@@ -71,6 +71,17 @@ public class LocateTitan {
 
         //reading the number of vertices
         int noOfVertices = StdIn.readInt();
+//        StdOut.println(noOfVertices);
+        Map<Integer, Double> verticesCost = new HashMap<>();
+        List<String> allVertices = new ArrayList<>();
+        String[] v1 = new String[noOfVertices];
+
+        //Reading the vertices and their costs(g lines - supposed to read six lines since there are six vertices)
+        for (int i = 0; i <= noOfVertices ;) {
+            String v = StdIn.readLine().replaceAll("\\s", "");
+            allVertices.add(v);
+            i++;
+        }
 
 
     }
