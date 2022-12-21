@@ -59,6 +59,9 @@ public class ForgeStormBreaker {
         StdIn.setFile(forgeStormbreakerInputFile);
         // WRITE YOUR CODE HERE TO INPUT FROM THE INPUT FILE
         int row = StdIn.readInt();
+        StdOut.print(row);
+        int column = StdIn.readInt();
+        int[] fluxNumbers = StdIn.readAllInts();
 
 
 
