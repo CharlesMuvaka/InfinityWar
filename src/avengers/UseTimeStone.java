@@ -75,6 +75,21 @@ public class UseTimeStone {
 
         int EuThreshold = StdIn.readInt();
         int numberOfEvents = StdIn.readInt();
+        String eventAndEu1 = StdIn.readLine();
+        StdOut.print(eventAndEu1);
+
+        Event[] allEvents = new Event[numberOfEvents];
+        String space = " ";
+
+        for(int i = 0; i < numberOfEvents; i++){
+            String eventAndEu = StdIn.readLine();
+            int eventIndex = Integer.parseInt(eventAndEu.substring(0,eventAndEu.indexOf(" ")));
+            int eventEu = Integer.parseInt(eventAndEu.substring(eventAndEu.indexOf(" ")).trim());
+            Event event = new Event(eventIndex);
+            event.setWeight(eventEu);
+            allEvents[i] = event;
+        }
+
 
 
     }
