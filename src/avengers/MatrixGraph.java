@@ -21,5 +21,14 @@ public class MatrixGraph {
     public Map<Integer, Double> getVerticesCost() {
         return verticesCost;
     }
+    public void displayGraph(){
+        for (int i = 0; i < this.adjacencyMatrix.length; i++) {
+            for (int j = 0; j < this.adjacencyMatrix[i].length; j++) {
+                System.out.print(this.adjacencyMatrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
 
 }
