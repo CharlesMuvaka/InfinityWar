@@ -74,6 +74,7 @@ public class UseTimeStone {
         StdIn.setFile(forgeStormbreakerInputFile);
 
         int EuThreshold = StdIn.readInt();
+        int numberOfEvents = StdIn.readInt();
 
 
     }
