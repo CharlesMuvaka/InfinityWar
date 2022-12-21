@@ -90,6 +90,12 @@ public class UseTimeStone {
             allEvents[i] = event;
         }
 
+        List<String> rows = new ArrayList<>();
+        for (int i = 0; i < numberOfEvents; i++) {
+            String row = StdIn.readLine().replaceAll("\\s", "");
+            rows.add(row);
+        }
+
 
 
     }
