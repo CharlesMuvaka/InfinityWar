@@ -57,7 +57,9 @@ public class ForgeStormBreaker {
 
 	    // Set the input file.
         StdIn.setFile(forgeStormbreakerInputFile);
-        ;
+        // WRITE YOUR CODE HERE TO INPUT FROM THE INPUT FILE
+        int row = StdIn.readInt();
+
 
 
     }
