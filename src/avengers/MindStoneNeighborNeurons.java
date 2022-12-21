@@ -74,6 +74,8 @@ public class MindStoneNeighborNeurons {
             allNeurons.add(neuron);
         }
 
+        int synapsesNumber = StdIn.readInt();
+
 
 
     }
