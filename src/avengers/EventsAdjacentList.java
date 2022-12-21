@@ -27,5 +27,10 @@ public class EventsAdjacentList {
         }
     }
 
+    public void printGraph() {
+        for (int i = 0; i < events.length; i++) {
+            StdOut.println(events[i].getIndex() + ": " + events[i].getNeighbors());
+        }
+    }
 
 }
