@@ -98,7 +98,13 @@ public class MindStoneNeighborNeurons {
         }
 
 
+        //Writing to the file
+        StdOut.setFile(forgeStormbreakerOutputFile);
+        for (int i = 0; i <wantedVertex.size(); i++) {
+            StdOut.println(wantedVertex.get(i));
 
+        }
+        StdOut.println();
 
     }
 }
