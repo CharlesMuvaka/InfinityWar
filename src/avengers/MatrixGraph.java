@@ -30,5 +30,7 @@ public class MatrixGraph {
         }
     }
 
-
+    public int[][] getAdjacencyMatrix() {
+        return adjacencyMatrix;
+    }
 }
