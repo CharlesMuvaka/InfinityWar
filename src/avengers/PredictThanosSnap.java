@@ -73,5 +73,6 @@ public class PredictThanosSnap {
 
         StdIn.setFile(kate);
 
+        long seed = StdIn.readLong();
 
 }
