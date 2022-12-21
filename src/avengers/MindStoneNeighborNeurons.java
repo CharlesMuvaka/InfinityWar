@@ -84,5 +84,9 @@ public class MindStoneNeighborNeurons {
         }
 
 
+        String mindStone = allNeurons.get(allNeurons.size()-1);
+
+
+
     }
 }
