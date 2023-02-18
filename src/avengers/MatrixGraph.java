@@ -18,6 +18,10 @@ public class MatrixGraph {
         this.adjacencyMatrix = new int[no_of_vertices][no_of_vertices];
     }
 
+    public void addNeighbor(int i, int j){
+        adjacencyMatrix[i][j] = 1;
+    }
+
     public Map<Integer, Double> getVerticesCost() {
         return verticesCost;
     }
